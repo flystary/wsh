@@ -1,0 +1,15 @@
+[Unit]
+Description=wsh
+After=syslog.target
+
+[Service]
+Type=simple
+ExecStart=/data/wsh/wsh -c wsh.example.toml
+Restart=always
+WorkingDirectory=/data/wsh
+LimitNOFILE=65535
+LimitNPROC=65535
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
