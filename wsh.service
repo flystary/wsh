@@ -4,7 +4,7 @@ After=syslog.target
 
 [Service]
 Type=simple
-ExecStart=/data/wsh/wsh -c wsh.example.toml
+ExecStart=/data/wsh/wsh -c wsh.toml
 Restart=always
 WorkingDirectory=/data/wsh
 LimitNOFILE=65535

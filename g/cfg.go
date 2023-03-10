@@ -17,7 +17,7 @@ type Http struct {
 }
 
 type Auth struct {
-	Username string
+        Username string
         Password string
 }
 
